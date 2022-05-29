@@ -180,15 +180,25 @@ select {
   text-transform: uppercase;
 }
 .overview-list {
+  display: block;
+  width: 503px;
+  height: 360px;
 }
 .overview-item {
+  display: flex;
+  justify-content: space-between;
+}
+.overview-item:not(:last-child) {
+  margin-bottom: 12px;
 }
 .overview-text {
   color: var(--white);
 }
 .overview-wrap__kg {
+  color: var(--white);
 }
 .overview-wrap__lb {
+  color: var(--white);
 }
 .overview-img {
   position: absolute;
