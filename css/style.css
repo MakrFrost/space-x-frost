@@ -6,6 +6,8 @@
   --text-color: #808080;
   /* Шрифт основной */
   --main-font: Roboto, sans-serif;
+  /* Для анимации */
+  --main-animation: 350ms ease-in;
 }
 
 /* Указываем box sizing */
@@ -87,24 +89,52 @@ select {
   padding-bottom: 54px;
 }
 .header-flex {
-}
-.header-icon {
+  display: flex;
+  justify-content: space-between;
 }
 .header-list {
+  display: flex;
+  gap: 20px;
 }
-.header-item {
-}
+/* .header-item {} */
 .header-link {
   text-decoration: none;
   color: var(--text-color);
+
+  font-size: 15px;
+  line-height: 14px;
+
+  transition: color var(--main-animation);
 }
 
 /* Стили для блока навигации */
 .header-nav__list {
+  display: flex;
+  gap: 15px;
 }
-.header-nav__item {
-}
+/* .header-nav__item {} */
 .header-nav__link {
   text-decoration: none;
   color: var(--text-color);
+
+  font-size: 15px;
+  line-height: 14px;
+
+  transition: color var(--main-animation);
+}
+/* Утилита для подсветки всех ссылок в хедере */
+.header-link:hover,
+.header-nav__link:hover {
+  color: var(--white);
+}
+
+/* Блок герой */
+/* .hero {} */
+.hero-title {
+}
+.hero-text {
+}
+.hero-container {
+}
+.hero-container__img {
 }
