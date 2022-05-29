@@ -1,0 +1,43 @@
+/* Стили для хедера */
+.header {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  &-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-list {
+    display: flex;
+    gap: 20px;
+  }
+  &-link {
+    text-decoration: none;
+    color: var(--text-color);
+
+    font-size: 15px;
+    line-height: 14px;
+
+    transition: color var(--main-animation);
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+  &-nav__list {
+    display: flex;
+    gap: 15px;
+  }
+  &-nav__link {
+    text-decoration: none;
+    color: var(--text-color);
+
+    font-size: 15px;
+    line-height: 14px;
+
+    transition: color var(--main-animation);
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+}

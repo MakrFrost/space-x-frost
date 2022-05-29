@@ -1,0 +1,104 @@
+/* Блок герой */
+.hero {
+  padding-top: 54px;
+  &-title {
+    margin-bottom: 26px;
+
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+
+    color: var(--white);
+  }
+  &-text {
+    position: relative;
+
+    margin-bottom: 26px;
+
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: lowercase;
+
+    color: var(--white);
+    &::after {
+      content: "";
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      width: 1px;
+      height: 59px;
+      background-color: var(--white);
+    }
+  }
+}
+
+/* Блок обзора характеристик ракеты */
+.overview {
+  position: relative;
+  padding-bottom: 550px;
+  &-title {
+    padding-top: 492px;
+    margin-bottom: 44px;
+
+    color: var(--white);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+  }
+  &-list {
+    display: block;
+    width: 503px;
+    height: 200px;
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  &-text {
+    color: var(--white);
+  }
+  &-wrap__kg {
+    color: var(--white);
+    transition: color var(--main-animation);
+    cursor: default;
+    &:hover {
+      color: var(--text-color);
+    }
+  }
+  &-wrap__lb {
+    color: var(--text-color);
+    transition: color var(--main-animation);
+    &:hover {
+      color: var(--white);
+    }
+  }
+  &-title__second {
+    margin-top: 218px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: var(--white);
+  }
+  &-dscrpt {
+    margin-top: 45px;
+    display: block;
+
+    width: 495px;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 29px;
+  }
+  &-img {
+    position: absolute;
+    margin-left: auto;
+    right: 0;
+    top: 0;
+  }
+}

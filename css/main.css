@@ -1,1 +1,220 @@
-/*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+:root {
+  /* Основные цвета */
+  --white: #fff;
+  --black: #000;
+  /* Цвета текста */
+  --text-color: #808080;
+  /* Шрифт основной */
+  --main-font: Roboto, sans-serif;
+  /* Для анимации */
+  --main-animation: 350ms ease-in;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--main-font);
+  background-color: #010001;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Ограничивающий контейнер */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Стили для хедера */
+.header {
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.header-list {
+  display: flex;
+  gap: 20px;
+}
+.header-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 14px;
+  transition: color var(--main-animation);
+}
+.header-link:hover {
+  color: var(--white);
+}
+.header-nav__list {
+  display: flex;
+  gap: 15px;
+}
+.header-nav__link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 14px;
+  transition: color var(--main-animation);
+}
+.header-nav__link:hover {
+  color: var(--white);
+}
+
+/* Блок герой */
+.hero {
+  padding-top: 54px;
+}
+.hero-title {
+  margin-bottom: 26px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: var(--white);
+}
+.hero-text {
+  position: relative;
+  margin-bottom: 26px;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: lowercase;
+  color: var(--white);
+}
+.hero-text::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  width: 1px;
+  height: 59px;
+  background-color: var(--white);
+}
+
+/* Блок обзора характеристик ракеты */
+.overview {
+  position: relative;
+  padding-bottom: 550px;
+}
+.overview-title {
+  padding-top: 492px;
+  margin-bottom: 44px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.overview-list {
+  display: block;
+  width: 503px;
+  height: 200px;
+}
+.overview-item {
+  display: flex;
+  justify-content: space-between;
+}
+.overview:not(:last-child) {
+  margin-bottom: 12px;
+}
+.overview-text {
+  color: var(--white);
+}
+.overview-wrap__kg {
+  color: var(--white);
+  transition: color var(--main-animation);
+  cursor: default;
+}
+.overview-wrap__kg:hover {
+  color: var(--text-color);
+}
+.overview-wrap__lb {
+  color: var(--text-color);
+  transition: color var(--main-animation);
+}
+.overview-wrap__lb:hover {
+  color: var(--white);
+}
+.overview-title__second {
+  margin-top: 218px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--white);
+}
+.overview-dscrpt {
+  margin-top: 45px;
+  display: block;
+  width: 495px;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 29px;
+}
+.overview-img {
+  position: absolute;
+  margin-left: auto;
+  right: 0;
+  top: 0;
+}/*# sourceMappingURL=main.css.map */
