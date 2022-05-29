@@ -182,7 +182,7 @@ select {
 .overview-list {
   display: block;
   width: 503px;
-  height: 360px;
+  height: 200px;
 }
 .overview-item {
   display: flex;
@@ -198,7 +198,24 @@ select {
   color: var(--white);
 }
 .overview-wrap__lb {
+  color: var(--text-color);
+}
+.overview-title__second {
+  margin-top: 218px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
   color: var(--white);
+}
+.overview-dscrpt {
+  margin-top: 45px;
+  display: block;
+
+  width: 495px;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 29px;
 }
 .overview-img {
   position: absolute;
