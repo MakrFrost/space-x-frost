@@ -159,13 +159,9 @@ select {
 .hero-text::after {
   content: "";
   position: absolute;
-  top: 56px;
+  top: 70px;
   left: 50%;
   width: 1px;
-  height: 50px;
+  height: 59px;
   background-color: var(--white);
-}
-.hero-container {
-}
-.hero-container__img {
 }
