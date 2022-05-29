@@ -287,7 +287,9 @@ select {
   color: var(--white);
 
   cursor: pointer;
+
+  transition: box-shadow var(--main-animation);
 }
 .footer-button:hover {
-    sha
+  box-shadow: 1px 0px 17px 9px rgba(255, 255, 255, 0.53);
 }
