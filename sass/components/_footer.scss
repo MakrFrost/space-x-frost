@@ -11,7 +11,6 @@
   }
   &-list {
     display: flex;
-
     gap: 20px;
   }
   &-item {
@@ -21,6 +20,7 @@
     text-decoration: none;
     color: var(--white);
     transition: color var(--main-animation);
+
     &:hover {
       color: var(--text-color);
     }
@@ -34,6 +34,7 @@
     text-decoration: none;
     color: var(--text-color);
     transition: color var(--main-animation);
+
     &:hover {
       color: var(--white);
     }
@@ -50,7 +51,6 @@
     border: 2px solid var(--white);
     background-color: var(--black);
     color: var(--white);
-
     cursor: pointer;
 
     transition: box-shadow var(--main-animation);
